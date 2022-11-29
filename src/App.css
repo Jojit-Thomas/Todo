@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+body {
+  background: #352f5b;
+  font-family: "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchToDo {
+  outline: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 440px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 0.24s all ease-in-out;
+}
+.searchToDo:focus {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 440px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 36px;
+}
+
+.todos li {
+  background: #423a6f;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.delete {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todos .hide {
+  display: none;
+}
+
+.inpTask {
+  width: 90%;
+  border : none;
+}
+.addButton {
+  width: auto;
+}
+
+
+
+
+.completed-item-box {
+  background-color: #352f5b;
 }
